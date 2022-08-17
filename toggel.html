@@ -1,0 +1,55 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+
+  $("#hide").click(function(){
+         $("#p1").toggle(1000);
+        $("#p2").hide(1000);
+        $(this).attr("disabled",true);
+						$("#Show").attr("disabled",false);
+            $("#H1").text("show");
+						// $("#hide").text("Show");
+  });
+    $("#show").click(function(){  
+        $("#p2").show(1000);  
+        $("#p1").hide(2000);
+        $(this).attr("disabled",true);
+						$("#Show").attr("disabled",false);
+            $("#H1").text("HIDE");
+						// $("#hide").text("Show");
+            // $("#hide").attr("disable",false);
+    });
+  $("#H1").click(function(){
+    ($(this).text()=="Hide")
+						?($(this).text("Show"),$("#hide").attr("disabled",true),$("#show").attr("disabled",false))
+						:($(this).text("Hide"),$("#hide").attr("disabled",false),$("#show").attr("disabled",true));
+
+    
+  })
+    });    
+</script>  
+</head>  
+<body> 
+<p id="p1">  
+<b>HTML</b><br/>  
+DO YOU KNOW ABOUT HTML ?<br/>  
+HOW DOES WORK HTML ?<br/>  
+FULL FORM OF HTML.<br/>  
+HOW MANY TAGS INCLUD FOR MAKING TABLE ?<br/>  
+</p>
+<p id="p2"> JAVASCRIPT
+  <b>JAVA SCRIPT</b>
+WHAT IS JAVASCRIPT ?<br/>
+HOW MANY TYPE OF JAVASCRIPT VARIABLE ?<br/>
+</p>
+
+
+<button id="hide">Hide</button>  
+<button id="show">Show</button>
+<button id="H1">HIDE</button><br/>
+         <button id="BtnPlus" style="font-size:xx-large;"><b>+</b></button>&nbsp;&nbsp;<button id="BtnMinus" style="font-size:xx-large;"><b>-</b></button>
+</body>  
+</html>

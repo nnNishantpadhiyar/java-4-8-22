@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#H1").focus(function () {
+                $(this).css("background-color", "green");
+            });
+            $("#H2").blur(function () {
+                $(this).css("background-color", "green");
+            });
+            $("#H3").keyup(function () {
+               alert($(this).val());
+            });
+            $("#H4").keypress(function () {
+               alert($(this).val());
+            });
+            $("#H5").keydown(function () {
+               alert($(this).val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text" id="H1" placeholder="ENTER YOUR NAME">
+    <hr />
+    <input type="text" id="H2" placeholder="ENTER YOUR NAME">
+    <hr />
+    <input type="text" id="H3" placeholder="ENTER YOUR NAME">
+    <hr />
+    <input type="text" id="H4" placeholder="ENTER YOUR NAME">
+    <hr />
+    <input type="text" id="H5" placeholder="ENTER YOUR NAME">
+    <hr />
+
+</body>
+
+</html>
